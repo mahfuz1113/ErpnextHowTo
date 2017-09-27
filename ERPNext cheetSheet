@@ -1,0 +1,9 @@
+How to reset Database:
+  Any and all bench commands need to be performed as the erp user (e.g. erpnext) 
+  and executed in the bench directory (e.g. frappe-bench). Don't use sudo as this will 
+  cause issues as well. Instead sudo su to the erp user. e.g.
+  
+    myregularuser@host:~$ sudo su - erpnext
+    erpnext@host:~$ cd frappe-bench
+    erpnext@host:~/frappe-bench$ bench reinstall
+    erpnext@host:~/frappe-bench$ bench mysql
