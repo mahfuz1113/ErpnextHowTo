@@ -1,0 +1,22 @@
+Change site name:
+
+5) yourname@testsystem:~$ sudo su - frappe
+6) frappe@testsystem:~$ cd frappe-bench/sites
+7) frappe@testsystem:~/frappe-bench/sites$ mv site1.local mycompany.com
+8) frappe@testsystem:~/frappe-bench/sites$ nano mycompany.com/site_config.json
+
+nano just like text edit if you never used like me just check at youtobe, change text to
+
+Add the following line. 
+"host_name": "http://mycompany.com",
+
+It should look like below
+{
+"db_name": "site1.local",
+"db_password": "*********",
+"host_name": "http://domain.org"
+}
+Save and exit
+
+How to add Lets encrypt:
+
